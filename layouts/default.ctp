@@ -1,20 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo Configure::read('App.name'); ?>
-		<?php echo $title_for_layout; ?>
-	</title>
 	<?php
-		echo $this->Html->meta('icon');
+	echo $this->Html->charset();
+	echo $this->Html->tag('title', String::insert(Configure::read('App.title'), Set::flatten(array_merge(Configure::read('App'), array('title' => $title_for_layout)))));
+	echo $this->Html->meta('icon');
 
-		echo $html->css(array('blueprint', 'cake.generic', 'ui-lightness/jqueryui'));
+	echo $html->css(array('blueprint', 'cake.generic', 'ui-lightness/jqueryui'));
+	echo $html->script(array('jquery', 'jqueryui', 'init'));
 
-		echo $html->script(array('jquery', 'jqueryui'));
-		echo $html->script(array('init'));
-
-		echo $scripts_for_layout;
+	echo $scripts_for_layout;
 	?>
 </head>
 <body>
@@ -22,8 +17,8 @@
 		<?php echo $html->div('', $this->element('nav.user'), array('id' => 'navUser')); ?>
 		<div id="header">
 			<h1><?php 
-			$temp = $html->getCrumbs(); 
-			echo (!empty($temp)) ? $html->div('crumbs', $temp) : $html->div('crumbs', $html->link( Configure::read('App.name'), '/'));
+				$temp = $html->getCrumbs(); 
+				echo (!empty($temp)) ? $html->div('crumbs', $temp) : $html->div('crumbs', $html->link( Configure::read('App.name'), Configure::read('App.breadcrumb')));
 			?></h1>
 		</div>
 		<?php echo $html->div('', $this->element('nav.main'), array('id' => 'navMain')); ?>
