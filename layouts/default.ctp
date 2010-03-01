@@ -19,13 +19,15 @@
 </head>
 <body>
 	<div id="container">
+		<?php echo $html->div('', $this->element('nav.user'), array('id' => 'navUser')); ?>
 		<div id="header">
 			<h1><?php 
 			$temp = $html->getCrumbs(); 
 			echo (!empty($temp)) ? $html->div('crumbs', $temp) : $html->div('crumbs', $html->link( Configure::read('App.name'), '/'));
 			?></h1>
 		</div>
-		<?php echo $html->div('', $this->element('nav.main'), array('id' => 'nav')); ?>
+		<?php echo $html->div('', $this->element('nav.main'), array('id' => 'navMain')); ?>
+		<?php echo $html->div('', $this->element('nav.sub'), array('id' => 'navSub')); ?>
 		<div id="content">
 
 			<?php $session->flash(); ?>

@@ -97,33 +97,96 @@ ul, li {
 	text-decoration: underline;
 	margin: .6em 0;
 }
-#nav{
+
+/* NAVIGATION */
+#navMain{
 	background: #353535;
 	clear: both;
 	color: #efefef;
 	padding: 10px 20px 0px 20px;
 	overflow: hidden;
 }
-#nav ul { 
+#navMain ul { 
 	list-style: none; 
 }
-#nav ul li { 
+#navMain ul li { 
 	display: inline; 
 }
-#nav ul li a {
+#navMain ul li a {
 	color: #efefef;
 	padding: 6px 10px 4px 10px;
 	display: block;
 	float: left;
 	text-decoration: none; 
 }
-#nav ul li a:hover {
+#navMain ul li a:hover {
 	color: #333;
 	background: #efefef;
 }
-#nav ul li a.active {
+#navMain ul li a.active {
+	color: #222;
 	background: #fff;
 }
+
+/* USERNAV */
+#navUser{
+	float: right;
+	color: #efefef;
+	padding: 0px;
+	margin: 0 40px;
+	overflow: hidden;
+}
+#navUser ul { 
+	list-style: none; 
+}
+#navUser ul li { 
+	display: inline; 
+}
+#navUser ul li a,
+#navUser ul li span
+ {
+	color: #cecece;
+	padding: 2px 5px;
+	display: block;
+	float: left;
+	text-decoration: none; 
+}
+#navUser ul li a:hover {
+	color: #fff;
+}
+#navUser ul li a.active {
+	color: #fff;
+}
+
+/* SUBNAV */
+#navSub{
+	background: #efefef;
+	clear: both;
+	color: #efefef;
+	padding: 0px 20px;
+	overflow: hidden;
+}
+#navSub ul { 
+	list-style: none; 
+}
+#navSub ul li { 
+	display: inline; 
+}
+#navSub ul li a {
+	color: #666;
+	padding: 3px 10px;
+	display: block;
+	float: left;
+	text-decoration: none; 
+}
+#navSub ul li a:hover {
+	color: #333;
+}
+#navSub ul li a.active {
+	color: #000;
+}
+
+/* CONTENT */
 #content{
 	background: #fff;
 	clear: both;
@@ -131,6 +194,8 @@ ul, li {
 	padding: 10px 20px 40px 20px;
 	overflow: auto;
 }
+
+
 #footer {
 	clear: both;
 	padding: 6px 10px;
