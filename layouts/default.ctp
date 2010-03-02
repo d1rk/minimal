@@ -25,7 +25,6 @@
 			?></h1>
 		</div>
 		<?php echo $html->div('', $this->element('nav.main'), array('id' => 'navMain')); ?>
-		<?php echo $html->div('', $this->element('nav.sub'), array('id' => 'navSub')); ?>
 		<div id="content">
 
 			<?php $session->flash(); ?>

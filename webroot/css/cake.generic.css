@@ -159,30 +159,33 @@ ul, li {
 }
 
 /* SUBNAV */
-#navSub{
+.navSub{
 	background: #efefef;
-	clear: both;
+	float: right;
 	color: #efefef;
-	padding: 0px 20px;
+	padding: 3px 10px;
 	overflow: hidden;
+	text-align: center;
 }
-#navSub ul { 
+.navSub ul { 
 	list-style: none; 
 }
-#navSub ul li { 
+.navSub ul li { 
 	display: inline; 
 }
-#navSub ul li a {
+.navSub ul li a,
+.navSub ul li span
+{
 	color: #666;
 	padding: 3px 10px;
 	display: block;
 	float: left;
 	text-decoration: none; 
 }
-#navSub ul li a:hover {
+.navSub ul li a:hover {
 	color: #333;
 }
-#navSub ul li a.active {
+.navSub ul li a.active {
 	color: #000;
 }
 
