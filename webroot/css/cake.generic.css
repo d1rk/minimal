@@ -375,14 +375,13 @@ input[type=submit], input[type=reset] {
     font-weight:bold;
 	width: auto;
 	vertical-align: bottom;
-	background:#aa6;
 	color: #fff;
 	border: 0;
-	padding: 0.1em 0.7em;
+	padding: 0.2em 0.8em;
 	cursor: pointer;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px; 
-	border-radius: 8px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
 }
 input[type=reset] {
     font-weight:normal;
@@ -391,6 +390,10 @@ input[type=submit].secondary, input[type=reset].secondary {
 	font-size: 80%;
 	font-weight: normal;
 	margin-right: 1em;
+}
+
+input[type=submit].primary {
+	background-color: #090;
 }
 
 input[type=submit]:hover {
