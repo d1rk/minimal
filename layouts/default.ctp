@@ -7,7 +7,7 @@
 	echo $this->Html->meta('icon');
 
 	echo $html->css(array('blueprint', 'cake.generic', 'ui-lightness/jqueryui'));
-	echo $html->script(array('jquery/jquery', 'jquery/jqueryui', 'init'));
+	echo $html->script(array('jquery/jquery', 'jquery/jqueryui', 'jquery/form', 'init'));
 
 	echo $scripts_for_layout;
 	?>
