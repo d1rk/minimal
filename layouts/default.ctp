@@ -24,7 +24,7 @@
 				echo $this->Html->tag('/div'); //div.crumbs
 			?></h1>
 		</div>
-		<?php echo $html->div('', $this->element('nav.main'), array('plugin' => 'flour', 'id' => 'navMain')); ?>
+		<?php echo $html->div('', $this->element('nav.main'), array('id' => 'navMain')); ?>
 		<div id="content">
 
 			<?php $session->flash(); ?>
