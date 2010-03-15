@@ -33,9 +33,12 @@
 
 		</div>
 		<div id="footer">
+			<?php echo $this->element('footer'); ?>
+		</div>
+		<div id="copyright">
 			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt'=> __('CakePHP: the rapid development php framework', true), 'border' => '0')),
-					'http://www.cakephp.org/',
+					$this->Html->image('/flour/img/bruensicke-logo.png', array('alt'=> __('CakePHP: the rapid development php framework', true), 'border' => '0')),
+					'http://bruensicke.com/',
 					array('target' => '_blank', 'escape' => false)
 				);
 			?>
