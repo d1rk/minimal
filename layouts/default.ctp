@@ -40,9 +40,10 @@
 		<?php echo $html->div('', $this->element('nav.main'), array('id' => 'navMain')); ?>
 		<div id="content">
 
-			<?php $session->flash(); ?>
-
-			<?php echo $content_for_layout; ?>
+			<?php
+			echo $session->flash();
+			echo $content_for_layout;
+			?>
 
 		</div>
 		<div id="footer">
