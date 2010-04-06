@@ -3,6 +3,8 @@
 <head>
 	<?php
 	echo $this->Html->charset();
+	echo $this->Html->meta('keywords', Configure::read('App.keywords'));
+	echo $this->Html->meta('description', Configure::read('App.description'));
 	echo $this->Html->tag('title', String::insert(Configure::read('App.title'), Set::flatten(array_merge(Configure::read('App'), array('title' => $title_for_layout)))));
 	echo $this->Html->meta('icon');
 
