@@ -41,9 +41,8 @@
 		</div>
 		<?php echo $html->div('', $this->element('nav.main'), array('id' => 'navMain')); ?>
 		<div id="content">
-
 			<?php
-			echo $session->flash();
+			echo $this->Session->flash();
 			echo $content_for_layout;
 			?>
 
