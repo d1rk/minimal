@@ -39,7 +39,7 @@
 				echo $this->Html->tag('/div'); //div.crumbs
 			?></h1>
 		</div>
-		<?php echo $this->Html->div('', $this->element('nav.main'), array('id' => 'navMain')); ?>
+		<?php echo $this->element('nav.main'); ?>
 		<div id="content">
 			<?php
 			echo $this->Session->flash();
