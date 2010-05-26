@@ -34,7 +34,7 @@
 			<h1><?php
 				echo $this->Html->div('crumbs');
 					echo $this->Html->link( Configure::read('App.name'), '/');
-					$temp = $this->Html->getCrumbs(Configure::read('App.breadcrumb'));
+					$temp = implode($this->getCrumbs(), Configure::read('App.breadcrumb'));
 					if(!empty($temp)) echo Configure::read('App.breadcrumb').' '.$temp;
 				echo $this->Html->tag('/div'); //div.crumbs
 			?></h1>
